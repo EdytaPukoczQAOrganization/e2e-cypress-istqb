@@ -1,17 +1,10 @@
-# Bootcamp QA Cypress E2E Template Project
-
-<p align="center">
-  <img src="https://bootcampqa.com/images/logo-black.png" alt="Bootcamp QA Logo" width="300">
-</p>
-
-> A template project using **Cucumber**, **Cypress**, and **JavaScript** for automated end-to-end (E2E) testing.
 
 ### 💻 Description
-This project is designed to perform end-to-end (E2E) tests for the [Bootcamp QA website](https://bootcampqa.com). It automates testing across both desktop and mobile browsers to ensure a high-quality user experience. The tests are executed weekly as part of a continuous integration (CI) pipeline to detect issues early.
+This project is designed to perform end-to-end (E2E) tests for the [ISTQB Exam Test](https://edytapukoczqaorganization.github.io/istqb-exam-test/). It automates testing across both desktop and mobile browsers to ensure a high-quality user experience. The tests are executed weekly as part of a continuous integration (CI) pipeline to detect issues early.
 
 These tests cover key user flows and functionalities, validating the website’s reliability and performance. 
 
-You can view the latest test results on [Cypress Cloud](https://cloud.cypress.io/projects/438j27/runs).
+You can view the latest test results on [Cypress Cloud](https://cloud.cypress.io/projects/rms3ib/runs).
 
 
 ### 🛠️ Technologies Used
@@ -35,5 +28,5 @@ You can view the latest test results on [Cypress Cloud](https://cloud.cypress.io
 
 
 ##  Run tests on CI with github Actions:
-1. Run tests on CI (Needs permisions): https://github.com/Bootcamp-QA/cypress-bootcampqa/actions/workflows/main.yml
+1. Run tests on CI (Needs permisions): https://github.com/EdytaPukoczQAOrganization/e2e-cypress-istqb/actions/workflows/main.yml
 
