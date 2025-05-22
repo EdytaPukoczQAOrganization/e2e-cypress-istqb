@@ -4,7 +4,7 @@ import {
     Then,
   } from "@badeball/cypress-cucumber-preprocessor";
 
-Given ("the user visits the ISTQB exam webpage  {string}"), (website) => {
+Given ("the user visits the ISTQB exam webpage {string}"), (website) => {
     cy.visit(website);
   };
 
