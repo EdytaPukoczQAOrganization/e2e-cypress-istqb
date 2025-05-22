@@ -4,27 +4,24 @@ import {
     Then,
   } from "@badeball/cypress-cucumber-preprocessor";
 
-Given ("the user visits the ISTQB exam webpage {string}"), (website) => {
-    cy.visit(website);
-  };
-
-When ("the user introduces his first name {string}"), (name) => {
-  //Limpiamos el campo y luego obtenemos el elemento nombre y lo rellenamos
-  cy.get('[datatest-id="nombreusuario"]').clear();
-  cy.get('[datatest-id="nombreusuario"]').type(name);
-};
-
-When ("the user introduces his last name {string}"), (lastName) => {
-  //Limpiamos el campo y luego obtenemos el elemento apellido y lo rellenamos
-  cy.get('[datatest-id="nombreusuario"]').clear();
-  cy.get('[datatest-id="nombreusuario"]').type(lastName);
-
-  };
+  Given("the user visits the ISTQB exam webpage {string}", (website) => {
+  cy.visit(website);
+});
 
 
-Then ("then the user sees the message Bienvenido and his first and last name", () => {
-  //Obtenemos el elemento mensaje de bienvenida y comprobamos que tenga el texto exacto
-  cy.get('datatest-id="mensajeenviarform').should('have.text',"Bienvenid@");
+  When("the user introduces his first name {string}", (name) => {
+  cy.get('[datatest-id="nombreusuario"]').clear().type(name);
+});
 
+  When("the user introduces his last name {string}", (lastName) => {
+  cy.get('[datatest-id="apellidousuario"]').clear().type(lastName);
+});
 
-  });
+  When("the user clicks on the Registrarse button", () => {
+  cy.get('[datatest-id="botonregistrarse"]').click();
+});
+
+  Then("the user sees the message {string}", (expectedMessage) => {
+  cy.get('[datatest-id="mensajeenviarform"]').should("contain.text", expectedMessage);
+});
+
