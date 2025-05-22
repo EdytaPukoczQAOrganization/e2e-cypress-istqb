@@ -7,4 +7,5 @@ Feature: registro de usuario en la página
     And the user introduces his last name "Pukocz"
     And the user presses the Registrarse button
     Then the user sees the message "BIENVENID@, EDYTA PUKOCZ"
+    And the user sees the text "Exam"
     
