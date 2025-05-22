@@ -18,7 +18,7 @@ import {
 });
 
   When("the user clicks on the Registrarse button", () => {
-  cy.get('[datatest-id="botonregistrarse"]').click();
+  cy.get('[datatest-id="botonRegistrarse"]').click();
 });
 
   Then("the user sees the message {string}", (expectedMessage) => {
