@@ -17,11 +17,11 @@ import {
   cy.get('[datatest-id="apellidousuario"]').clear().type(lastName);
 });
 
-  When("the user clicks on the Registrarse button", () => {
+  When("the user presses the Registrarse button", () => {
   cy.get('[datatest-id="botonRegistrarse"]').click();
 });
 
   Then("the user sees the message {string}", (expectedMessage) => {
-  cy.get('[datatest-id="mensajeenviarform"]').should("contain.text", expectedMessage);
+  cy.get('[datatest-id="mensajesenviarform"]').should("contain.text", expectedMessage);
 });
 
