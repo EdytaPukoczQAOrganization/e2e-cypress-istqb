@@ -25,10 +25,6 @@ import {
   cy.get('[datatest-id="mensajesenviarform"]').should("contain.text", expectedMessage);
 });
 
-  Then("the user sees the message {string}", (expectedMessage) => {
-  cy.get('[datatest-id="mensajesenviarform"]').should("contain.text", expectedMessage);
-});
-
   Then("the user sees the text {string}", (examText) => {
-    cy.get('[datatest-id="elementoExamen"]').should("contain.text", examText);
-  });
+  cy.get('[datatest-id="elementoExamen"]').should("contain.text", examText);
+});
