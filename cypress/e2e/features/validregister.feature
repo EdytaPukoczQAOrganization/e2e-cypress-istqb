@@ -1,4 +1,4 @@
-Feature: registro de usuario en la página
+Feature: registro de usuario correcto en la página
     As a student I want to introduce my first and my last name in order to access the examen
 
     Scenario: Register with the correct name
