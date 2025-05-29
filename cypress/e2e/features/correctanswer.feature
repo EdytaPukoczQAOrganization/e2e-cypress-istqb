@@ -1,7 +1,7 @@
 Feature: See results of an approved exam
 
 Scenario: Approved exam
-  Given the user visits the ISTQB exam webpage "https://edytapukoczqaorganization.github.io/istqb-exam-test/"
+  Given the user visits the ISTQB exam webpage
   When the user enters a valid name "Lucía"
   When the user enters a valid last name "Pérez"
   And the user hits the Registrarse button

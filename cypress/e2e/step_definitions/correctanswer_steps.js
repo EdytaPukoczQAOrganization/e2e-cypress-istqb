@@ -4,11 +4,6 @@ import {
   Then,
 } from "@badeball/cypress-cucumber-preprocessor";
 
-beforeEach(() => {
-  cy.clearCookies();
-  cy.clearLocalStorage();
-  cy.visit("https://edytapukoczqaorganization.github.io/istqb-exam-test/");
-});
 
 When("the user enters a valid name {string}", (firstNameCorrectAnswerStep) => {
   cy.get('[datatest-id="nombreusuario"]').type(firstNameCorrectAnswerStep);

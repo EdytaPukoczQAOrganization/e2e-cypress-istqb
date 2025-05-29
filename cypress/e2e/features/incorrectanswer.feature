@@ -1,7 +1,7 @@
 Feature: See results of a suspended exam
 
 Scenario: Approved exam
-  Given the user visits the ISTQB exam webpage "https://edytapukoczqaorganization.github.io/istqb-exam-test/"
+  Given the user visits the ISTQB exam webpage
   When the user writes a valid name "Ana"
   When the user writes a valid last name "Fernández"
   And the user clicks on the Registrarse button
